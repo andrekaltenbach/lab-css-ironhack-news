@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -177,6 +181,24 @@ header {
 }
   
 /* Write your CSS below */
+@media (max-width: 480px) {
+
+  .newspaper-name {
+    border-bottom: 0;
+  }
+
+  .navbar li{
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+}
+
 @media (max-width: 760px) {
   .navbar {
     flex-direction: column;
