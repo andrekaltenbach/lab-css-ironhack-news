@@ -218,8 +218,28 @@ header {
   }
 
   .article:last-child {
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 
 }
 
+@media (min-width: 761px) and (max-width: 1024px) {
+
+  .navbar {
+    flex-grow: 1;
+  }
+
+  .navbar li {
+    flex-grow: 1;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+
+  .article:last-child {
+    margin-bottom: 0;
+  }
+
+}
